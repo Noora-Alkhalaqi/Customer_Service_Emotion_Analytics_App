@@ -1,0 +1,15 @@
+# Customer Service Speech Emotion Analytics - Python packages
+# Install:  pip install -r requirements.txt
+# (Python 3.12 was used on the development computer. Install a CPU build of torch if you have no GPU.)
+--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit          # the app; it also installs starlette, uvicorn, websockets and requests, which the live-call server uses
+pandas
+numpy
+plotly
+torch
+transformers       # WavLM (audio emotion), the text model and the Qwen report model
+joblib
+scikit-learn       # NOTE: the saved classifiers were made with scikit-learn 1.6.1. If you see a version warning, run: pip install scikit-learn==1.6.1
+librosa
+faster-whisper     # speech-to-text
+pyannote.audio     # speaker separation (needs a Hugging Face token and accepting the model terms)

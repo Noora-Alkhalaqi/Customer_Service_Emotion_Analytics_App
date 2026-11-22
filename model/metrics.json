@@ -1,0 +1,104 @@
+{
+  "evaluated_on": "MELD official test split, 2610 utterances",
+  "accuracy": 0.4590038314176245,
+  "macro_f1": 0.23634604542227963,
+  "weighted_f1": 0.4280182427517801,
+  "always_neutral_baseline_accuracy": 0.4812260536398467,
+  "labels": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness",
+    "surprise"
+  ],
+  "confusion_matrix_rows_true_cols_pred": [
+    [
+      95,
+      9,
+      6,
+      34,
+      163,
+      11,
+      27
+    ],
+    [
+      13,
+      1,
+      4,
+      7,
+      34,
+      3,
+      6
+    ],
+    [
+      9,
+      2,
+      1,
+      5,
+      26,
+      4,
+      3
+    ],
+    [
+      30,
+      7,
+      7,
+      87,
+      227,
+      12,
+      32
+    ],
+    [
+      73,
+      17,
+      21,
+      107,
+      927,
+      43,
+      68
+    ],
+    [
+      21,
+      2,
+      3,
+      15,
+      126,
+      27,
+      14
+    ],
+    [
+      30,
+      3,
+      7,
+      30,
+      143,
+      8,
+      60
+    ]
+  ],
+  "encoder": "microsoft/wavlm-base (frozen), mean-pooled last layer",
+  "classifier": "StandardScaler + LogisticRegression(C=1.0, class_weight=None)",
+  "train_utterances": 9989,
+  "dev_utterances": 1108,
+  "test_utterances": 2610,
+  "dev_row_without_video": [
+    "dia110_utt7.mp4"
+  ],
+  "clips_truncated_to_30s": [
+    [
+      "dia38_utt4.mp4",
+      305.0
+    ],
+    [
+      "dia220_utt0.mp4",
+      235.1
+    ],
+    [
+      "dia309_utt0.mp4",
+      41.0
+    ]
+  ],
+  "sklearn_version": "1.6.1"
+}

@@ -1,0 +1,28 @@
+{
+  "audio_only": {
+    "accuracy": 0.4590038314176245,
+    "macro_f1": 0.23634604542227963,
+    "weighted_f1": 0.4280182427517801
+  },
+  "text_only": {
+    "accuracy": 0.542911877394636,
+    "macro_f1": 0.33790991886387595,
+    "weighted_f1": 0.5334757473525491
+  },
+  "fused": {
+    "accuracy": 0.5659003831417625,
+    "macro_f1": 0.3406718917665194,
+    "weighted_f1": 0.5400331246638835
+  },
+  "majority_baseline_accuracy": 0.4812260536398467,
+  "chosen_audio_weight": 0.4,
+  "text_encoder": "sentence-transformers/all-mpnet-base-v2",
+  "n_test": 2610,
+  "agreement": {
+    "agree_fraction": 0.4739463601532567,
+    "accuracy_when_agree": 0.6952303961196443,
+    "audio_accuracy_when_disagree": 0.24617625637290605,
+    "text_accuracy_when_disagree": 0.40568099053168244,
+    "fused_accuracy_when_disagree": 0.4493809176984705
+  }
+}
